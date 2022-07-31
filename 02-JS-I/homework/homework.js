@@ -42,7 +42,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var restando = x, y;
+  var restando = x - y;
   return restando;
 }
 
@@ -50,7 +50,7 @@ function resta(x, y) {
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  var multiplicando = x, y;
+  var multiplicando = x * y;
   return multiplicando;
 }
 
@@ -58,7 +58,7 @@ function multiplica(x, y) {
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  var dividiendo = x, y;
+  var dividiendo = x / y;
   return dividiendo;
 }
 
@@ -90,7 +90,7 @@ function menosQueNoventa(num) {
   // Tu código:
   if(num < 90){
     return true;
-  } false{
+  } else{
     return false;
   }
 }
@@ -177,15 +177,10 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0) {
-    return "Es Positivo";
-  }
-  if (numero < 0) {
-    return "Es Negativo";
-  }
-  else if (numero === 0) {
-    return false;
-  }
+  if (numero > 0) return "Es positivo";
+  if (numero < 0) return "Es negativo";
+  if (numero === 0) return false;
+ 
 }
 
 function agregarSimboloExclamacion(str) {
@@ -201,14 +196,16 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre + " " + apellido;
+  //return nombre + " " + apellido;
+  return `${nombre} ${apellido}`;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "Hola " + nombre + "!";
+  //return "Hola " + nombre + "!";
+  return `Hola ${nombre}!`;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
